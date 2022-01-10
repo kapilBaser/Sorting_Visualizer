@@ -13,38 +13,38 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="bas.css">
+        <link rel="stylesheet" href="main.css">
     </head>
-    <body onload="gen();">
+    <body onload="generateArray();">
         <div class="main">
             
         <div class="nav">
-            <h3 id="mb">Sorting Visualizer</h3>
-            <h4 id="mb1">Made By Kapil:)</h4>
+            <h3 id="header">Sorting Visualizer</h3>
+            <h4 id="header1">Made By Kapil:)</h4>
             Array Size Range 
-            <input type="range" class="r" id="in" min="30" value="40" max="80" oninput="change(this.value);">
+            <input type="range" class="range" id="arrRange" min="30" value="40" max="80" oninput="change(this.value);">
             Speed
-            <input type="range" class="r" id="in1" min="30" value="150" max="700" oninput="schange(this.value);">
-        <div class="n2">
+            <input type="range" class="range" id="spdRange" min="3" value="150" max="700" oninput="schange(this.value);">
+        <div class="buttons">
             Sorting Algorithms
-            <input type="button" class="ii" id="s1" value="Selection Sort" onclick="sort();" >
-            <input type="button" class="ii" id="s2" value="Bubble Sort" onclick="sort2();" >
-            <input type="button" class="ii" id="s3" value="Insertion Sort" onclick="sort3();" >
+            <input type="button" class="btn" id="s1" value="Selection Sort" onclick="selectionSort();" >
+            <input type="button" class="btn" id="s2" value="Bubble Sort" onclick="bubbleSort();" >
+            <input type="button" class="btn" id="s3" value="Insertion Sort" onclick="insertionSort();" >
 
         </div>
         </div>
     
         <center>
-        <div id="co">
+        <div id="container">
             
         
         </div>
     </center>
-    <div style="text-align: center;"><h1 id="algo"></h1></div>
+    <div style="text-align: center;"><h1 id="algoName"></h1></div>
         </div>
        
-        <input type="button"  id="rg" value=" Generate Array" onclick="gen();btclk();" >
+        <input type="button"  id="bottombtn" value=" Generate Array" onclick="generateArray();btnclk();" >
         
-        <script src="kap.js" async defer></script>
+        <script src="index.js" async defer></script>
     </body>
 </html>
