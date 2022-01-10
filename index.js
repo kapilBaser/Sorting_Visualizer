@@ -55,7 +55,7 @@ function generateArray() {
 
 // when bottom button click
 function btnclk() {
-
+    
     // Array range enabled 
     range.disabled = false;
 
@@ -255,6 +255,8 @@ async function bubbleSort(delay = 300) {
 
     //set blank string after sorting algorith completed to h1(id=algoname)
     algoName.innerHTML = "";
+
+   
 }
 
 
@@ -293,12 +295,12 @@ async function insertionSort(delay = 300) {
         while (arr[j] > current && j >= 0) {
 
             //await function to pause for a while
-            await new Promise((resolve) =>
-                setTimeout(() => {
-                    resolve();
-                }, speed)
+            // await new Promise((resolve) =>
+            //     setTimeout(() => {
+            //         resolve();
+            //     }, speed)
 
-            );
+            // );
             bars[j].style.backgroundColor = "rgb(253, 93, 0)";
 
             arr[j + 1] = arr[j];
@@ -338,4 +340,6 @@ async function insertionSort(delay = 300) {
 
     //set blank string after sorting algorith completed to h1(id=algoname)
     algoName.innerHTML = "";
+
+   
 }
