@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sorting Visualizer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="bas.css">
+    </head>
+    <body onload="gen();">
+        <div class="main">
+            
+        <div class="nav">
+            <h3 id="mb">Sorting Visualizer</h3>
+            <h4 id="mb1">Made By Kapil:)</h4>
+            Array Size Range 
+            <input type="range" class="r" id="in" min="30" value="40" max="80" oninput="change(this.value);">
+            Speed
+            <input type="range" class="r" id="in1" min="30" value="150" max="700" oninput="schange(this.value);">
+        <div class="n2">
+            Sorting Algorithms
+            <input type="button" class="ii" id="s1" value="Selection Sort" onclick="sort();" >
+            <input type="button" class="ii" id="s2" value="Bubble Sort" onclick="sort2();" >
+            <input type="button" class="ii" id="s3" value="Insertion Sort" onclick="sort3();" >
+
+        </div>
+        </div>
+    
+        <center>
+        <div id="co">
+            
+        
+        </div>
+    </center>
+    <div style="text-align: center;"><h1 id="algo"></h1></div>
+        </div>
+       
+        <input type="button"  id="rg" value=" Generate Array" onclick="gen();btclk();" >
+        
+        <script src="kap.js" async defer></script>
+    </body>
+</html>
