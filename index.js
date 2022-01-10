@@ -1,6 +1,5 @@
 var arr = [];
 var algoName = document.getElementById('algoName');
-var di = document.getElementById('kap');
 var range = document.getElementById('arrRange');
 var srage = document.getElementById('spdRange');
 var btn = document.querySelectorAll('.btn');
